@@ -1,0 +1,30 @@
+{
+    "name": "nchoquet/test_composer_2",
+    "type": "project",
+    "require": {
+        "nchoquet/dis_framework_php7-4": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Nicolas Choquet",
+            "email": "nicolas.choquet.ext@orange.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "app\\": "src"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "cd vendor/nchoquet/dis_framework_php7-4/;composer install",
+            "mv vendor/nchoquet/dis_framework_php7-4/index.php .",
+            "mv vendor/nchoquet/dis_framework_php7-4/cmd.php .",
+            "mv vendor/nchoquet/dis_framework_php7-4/.htaccess .",
+            "rm -rf vendor/nchoquet/dis_framework_php7-4/vendor/",
+            "php src/scripts/custom_index.php",
+            "php src/scripts/custom_cmd.php"
+        ]
+    }
+}
