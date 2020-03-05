@@ -17,14 +17,11 @@
         }
     },
     "scripts": {
+        "pre-autoload-dump": "composer clearcache",
         "post-autoload-dump": [
             "cd vendor/nchoquet/dis_framework_php7-4/;composer install",
-            "mv vendor/nchoquet/dis_framework_php7-4/index.php .",
-            "mv vendor/nchoquet/dis_framework_php7-4/cmd.php .",
-            "mv vendor/nchoquet/dis_framework_php7-4/.htaccess .",
             "rm -rf vendor/nchoquet/dis_framework_php7-4/vendor/",
-            "php src/scripts/custom_index.php",
-            "php src/scripts/custom_cmd.php"
+            "php src/scripts/custom_files.php"
         ]
     }
 }
