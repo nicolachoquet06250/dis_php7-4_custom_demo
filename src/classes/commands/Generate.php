@@ -2,7 +2,7 @@
 
 namespace app\classes\commands;
 
-class Generate extends \classes\commands\Generate {
+class Generate extends \dis\core\classes\commands\Generate {
     /**
      * @param string $content
      */
@@ -12,10 +12,10 @@ class Generate extends \classes\commands\Generate {
 namespace main;
 
 use app\\classes\\controllers\\Test;
-use classes\\Application;
-use classes\\routage\\Request;
-use classes\\routage\\Response;
-use classes\\routage\\Router;
+use dis\\core\\classes\\Application;
+use dis\\core\\classes\\routage\\Request;
+use dis\\core\\classes\\routage\\Response;
+use dis\\core\\classes\\routage\\Router;
 use ReflectionException;
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -50,7 +50,8 @@ try {
 namespace main;
 
 use app\classes\commands\Register;
-use classes\Command;
+use dis\core\classes\Command;
+use dis\core\main\Main;
 
 require_once __DIR__ . \'/vendor/autoload.php\';
 

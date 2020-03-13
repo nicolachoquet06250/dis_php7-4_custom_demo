@@ -5,8 +5,8 @@ namespace app\classes\commands;
 
 
 use app\classes\services\Test;
-use traits\Command;
-use traits\DIS;
+use dis\core\traits\Command;
+use dis\core\traits\DIS;
 
 /**
  * Class MyCommand

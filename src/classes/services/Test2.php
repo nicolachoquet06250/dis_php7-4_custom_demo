@@ -2,9 +2,9 @@
 
 namespace app\classes\services;
 
-use classes\mvc\Controller;
-use traits\DIS;
-use traits\Singleton;
+use dis\core\classes\mvc\Controller;
+use dis\core\traits\DIS;
+use dis\core\traits\Singleton;
 
 /**
  * Class Test2

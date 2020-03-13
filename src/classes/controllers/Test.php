@@ -2,11 +2,11 @@
 
 namespace app\classes\controllers;
 
-use classes\mvc\Controller;
-use classes\routage\Request;
-use classes\routage\Response;
+use dis\core\classes\mvc\Controller;
+use dis\core\classes\routage\Request;
+use dis\core\classes\routage\Response;
 use app\classes\services\Test3;
-use traits\DIS;
+use dis\core\traits\DIS;
 
 class Test extends Controller {
     use DIS;

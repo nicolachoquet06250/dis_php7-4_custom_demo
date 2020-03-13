@@ -2,7 +2,7 @@
 
 namespace app\classes\services;
 
-use traits\DIS;
+use dis\core\traits\DIS;
 
 class Test3 {
     use DIS;

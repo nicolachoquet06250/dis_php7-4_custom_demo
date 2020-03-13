@@ -2,7 +2,7 @@
 
 namespace app\classes\services;
 
-use traits\Singleton;
+use dis\core\traits\Singleton;
 
 /**
  * Class Test

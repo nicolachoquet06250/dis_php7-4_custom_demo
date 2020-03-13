@@ -1,8 +1,8 @@
 <?php
 
 use app\classes\commands\Register;
-use classes\Command;
-use main\Main;
+use dis\core\classes\Command;
+use dis\core\main\Main;
 
 require_once __DIR__.'/../../vendor/autoload.php';
 
